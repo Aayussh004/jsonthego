@@ -1,5 +1,5 @@
 "use strict" // it is used when we are writing code for newer version of js
-// sks
+// sksss
 // #
 //alert(3+3) //it will not give us 6 coz browser ka js alag hota hai
 // aur node ka js engine ka alert alag hota hai
