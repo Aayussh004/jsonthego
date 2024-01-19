@@ -22,3 +22,5 @@ function createUser(username, email, password){//parent function
 
 const chai = new createUser("Ayush", "chai@facebook.com", "Ayush@223")
 console.log(chai);
+
+//yhi chiz hum classes me asaani se kr skte hai
