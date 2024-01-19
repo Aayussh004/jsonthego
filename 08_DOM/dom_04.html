@@ -1,0 +1,64 @@
+<!-- Edit and remove elements in DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="ulkiclass">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<!-- yha hum bina html ki body use kre khali script se hi apna code likhenge jise hum dom manipulation bolte hai -->
+<!-- maan lo aapko javascript list tag ke neeche aur 3 <li> tag add krne hai to hum ek function bna kr bhi kaam krwa skte hai -->
+<script>
+
+    function addLanguage(langName){
+        const li = document.createElement('li');//to create an <li> tag
+        li.innerHTML = `${langName}`;// to give content in tht li tag
+        document.querySelector('.ulkiclass').appendChild(li) //now select the body ka ul of class name "language" then append it
+    }
+
+    addLanguage("python")
+    addLanguage("typescript")
+
+
+    //ye optimized tarika hai kyuki hum innerhtml ko acha aadmi nhi mante to hum createTextNode use krte hai
+    function addOptiLanguage(langName){
+
+        const li = document.createElement('li');//                  <li> </li>
+        const contentofli = document.createTextNode(langName);//    contentofli = "Ruby"
+        li.appendChild(contentofli)// <li> {contentofli} </li>       <li> Ruby </li>
+        
+        document.querySelector('.ulkiclass').appendChild(li) // body->ul->ulkiclass ke andar append krdo
+    }
+    addOptiLanguage('Ruby')
+    addOptiLanguage('Rust')
+    addOptiLanguage('Kotlin')
+
+    //#### Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML = "Mojo"//achi baat nhi hai
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)// achi baat
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'// javascript
+
+    //#####  remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()// kotlin
+
+     const all_list_item = document.querySelectorAll("li")
+     all_list_item.forEach(element => {
+        element.style.backgroundColor = "blue"
+     });
+</script>
+</html>

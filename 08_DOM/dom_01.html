@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Page</title>
+    <!-- <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style> -->
+    
+    <!-- <link rel="stylesheet" href="mycss.css"> -->
+</head>
+<body class="bg-black">
+    <div class="class-bg">
+        <h1 id="title" class="heading">Dom learning with chai aur code <span style="display: none;" >This is a span</span></h1>
+        <h2 id="header1">This is header1</h2>
+        <h2>This is header2</h2>
+        <h2>This is header3</h2>
+        <h2>This is header4</h2>
+        <h2>This is header5</h2>
+        <p>This is the testing page </p>
+
+      <input type="password" name="" hidden><input/>
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+</body>
+
+<script  >
+    title = document.getElementById('title')
+    title.style.backgroundColor = "red"
+    
+    console.log(title.innerHTML);//will give html span also which is displayed none
+    console.log(title.innerText);//gives only thing which is showing in the screen
+    console.log(title.textContent);// will give only span value not html span
+</script>
+</html>
+
+
+
+<!-- console=>
+document.getElementById("title")//this will give me h1 tag as a whole
+now store it somewhere to target this element 
+title = document.getElementById("title")//
+title.style.backgroundcolor = "green"
+title.innerhtml()//will give everything including html tags
+title.innertext()//will give only tht thing which is visible in the screen
+title.textContent()//will give every text tht is written inside the title -->
+
+<!-- document.querySlector('h2') //this will select first h2 tag -->
+
+<!-- iske baad ka pdf notes me hai,
+link: "https://app.videonotebook.com/public/video/d2b9de4c-53c3-434b-ba99-f6d2a610d1e0/" -->

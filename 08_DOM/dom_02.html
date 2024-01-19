@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_02 with chai</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <!-- this will be also count in nodelists wo bhi 2 -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+
+<script>
+    const parent = document.querySelector('.parent')
+    // ##console.log(parent);
+    // console.log(parent.children[2]);
+
+    //### to print all value
+    // const n= parent.children.length;
+    // for(let i=0;i<n;i++){
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    //### to access first and last things or move from parent to child
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    //### now ab agr child to parent jana hai to pura tree traverse krne ki jagah ek query lga do
+    // const dayone = document.querySelector('.day')//will print first day as its not querselall()
+    // console.log(dayone)
+    // console.log(dayone.nextElementSibling)
+    // console.log(dayone.parentElement)
+
+    // ### agar mujhe koi element ki nodes pta krna hai to 
+    console.log("Nodelist: ", parent.childNodes) 
+
+    </script>
+</html>
