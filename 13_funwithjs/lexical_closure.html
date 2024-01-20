@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+    <script>
+
+        //## Lexical Scoping:
+        //lexical scoping ka mtlb ye hai ki aap kisi func ke andar ka func ho to aap apne parent function ke saare variables access kr skte ho but bahar (globally) koi access nhi kr skta
+
+
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "hitesh"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+
+    // Note: Javascript ke paas do hi chize hai ek single thread me run hona aur ek memory to yha memory ka concept use hua hai
+
+    // ## Closure: 
+    //Closure ka mtlb ye hai ki aap neeche name print kra paa rhe ho aur ye badi baat isiliye hai kyuki 
+
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);// iske scope me parent func ka variable stored hai
+    //     }
+    //     return displayName;//aur iska scope to yha khtm ho jana chahiye tha
+    // }
+
+    // const myFunc = makeFunc();//aur parent func ka scope yha khtm hona chahiye tha
+    
+    //but ho ye rha hai ki makefunc() apni memory display() func ke saath share kr rha hai aur yhi saved memory myFunc() ko as it is pass ho rhi means LEXICAL SCOPE OF FUNCTION PASS HO RHA HAI hai isilye name print ho paa rha hai 
+
+    // myFunc();
+
+    </script>
+    <script>
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+    </script>
+</html>
