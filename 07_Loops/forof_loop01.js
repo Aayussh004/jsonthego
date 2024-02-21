@@ -1,7 +1,7 @@
 //*************************** "forof" loop ************************************/
 const arr = [11,12,13,14,15]
 for (const i of arr) {
-    // console.log(i)
+    console.log(i)
 }
 //just like for(auto i:arr){ cout<<i;} in c++
 

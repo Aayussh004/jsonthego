@@ -2,9 +2,10 @@
 
 const arr = [1,2,3,4,5,6,7];
 
-let values = arr.map((item)=> {
-    return item+100;
+let values = arr.map((i)=> {
+    return i*100;
 })
+console.log(values)
 
 //chaining 
 let newval = arr

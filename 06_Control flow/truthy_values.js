@@ -29,7 +29,7 @@ if (Object.keys(emptyObj).length === 0) {
 }
 
 
-// Nullish Coalescing Operator (??): null undefined
+// Nullish Coalescing Operator (??)  : null undefined
 //kelisense operator ternary operator se alag hota hai
 // ?? iska mtlb ye h ki by chance agr koi value null ya undef reh jaati h to hum second value consider krenge
 let val1;

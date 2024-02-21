@@ -25,6 +25,7 @@ console.log("substring: ",newGame)
 
 const newGam = gameName.slice(0,5)//will print from 0 to 4 index
 console.log("slice: ",newGame)
+console.log(gameName)
 
 const anotherGame = gameName.slice(-5,7)//we can use negative values in it => 6+(-5)=1 and upto end 7th position 
 const anotherGam = gameName.slice(-6,5)//we can use negative values in it => 6+(-6)=0 and 5th position 

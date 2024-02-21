@@ -13,7 +13,15 @@ console.log(loginUserMessage("hitesh"))
 
 //aapka customer cart me kitne item add krega ye kisko pta hai to uske liye hum rest/spread operator use krte hai (three dots ...)
 
+
+
+
+
 // *** rest operator ***
+
+
+
+
 function calculateCartPrice(...num1) {
   return num1; // 2 4 5 20
 }

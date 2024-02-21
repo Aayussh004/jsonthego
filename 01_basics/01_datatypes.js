@@ -18,9 +18,8 @@ console.log(sk)
 // string
 // boolean
 // null it is the standalone value its not a type, whn value is empty so its not undefined
-// undefined=> when value is not defined but initialized
+// undefined=> when value is initialized but not defined
 // symbol => unique values
-
 // object
 
 // # 
