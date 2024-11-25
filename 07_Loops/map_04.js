@@ -1,4 +1,4 @@
-//ye koi map datatype nhi hai balki inbuilt function hai like filter jo ki value return krta h
+//ye koi map datatype nhi hai balki operator hai like filter jo ki value return krta h
 
 const arr = [1,2,3,4,5,6,7];
 
@@ -18,3 +18,4 @@ let newval = arr
 console.log(newval)
 
 // Note: filter me humesha bool values check krna yes ya no wali
+// filter bhi array return krega

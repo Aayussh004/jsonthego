@@ -1,4 +1,4 @@
-//**************************** "foreach" loop *************************************/
+//**************************** "foreach" loop *************************************/ object se parhej krta h
 // const arr = [1,2,4,3,8,9]
 // arr.forEach(function (it){
 //     console.log(it)//will print the arr or mp values
@@ -39,7 +39,7 @@ myarr.forEach((i)=>{
 console.log(i)
 })
 
-const mylangval  = myarr.filter((item)=>{
+const mylangval = myarr.filter((item)=>{
  return item.langname=== "py"; //yha se object return kiya
 })
 console.log(mylangval)//mei yha lang ke basis me value filter kr rha hu
@@ -48,7 +48,7 @@ console.log(mylangval)//mei yha lang ke basis me value filter kr rha hu
 //now ab problem ye hai "foreach" me ki mujhe koi mid value access krni hai to kaise kru?
 //Solution hai use filter kyuki foreach loop kuch return nhi krta but filter krta h aap krwao to shi
 const arr = [1,2,4,3,8,9,14]
-const values = arr.filter((i)=> i>=4)//ye bhi function le leta h apne andar
+const values = arr.filter((i)=> i>=4)//ye bhi function le leta h apne andar means callback invoked inside filter and forEach both
 console.log(values);
 
 

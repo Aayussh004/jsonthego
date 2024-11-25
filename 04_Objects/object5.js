@@ -10,7 +10,7 @@ const tinderuser = {
 //ab agr is user ki mujhe key chahiye in the array then
 console.log(Object.keys(tinderuser)); //no. of column present
 console.log(Object.values(tinderuser)); //total response present
-console.log(Object.entries(tinderuser)); //aapke db me kitne column h aur entry h?
+console.log(Object.entries(tinderuser)); //gives key value pair as an output
 console.log(tinderuser.hasOwnProperty('isloggedin')); //ky aapke database me "isloggedin" naam ka column h?
 console.log(tinderuser.hasOwnProperty('email')); //ky aapke db me "email" ka column hai?
 

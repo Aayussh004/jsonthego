@@ -1,6 +1,8 @@
 // Arrays
 
 const myArr = [0, 1, 2, 3, 4, 5]; //aise array declare hota hai with definition
+
+
 const myHeors = ['shaktiman', 'naagraj']; //aise bhi
 
 const vec = new Array(1, 2, 3, 4); //aur ye ek dynamic array
@@ -26,7 +28,7 @@ console.log( newArr);//string values
 
 //slice means aapke original array ki copy ban ke samne wale ko denge aur usme range se phle tak saare
 //elments included honge i.e. arr.slice(1,5) prints: 1 2 3 4
-//slice me original array ko ghnta kuch nhi bigdega
+//slice me original array ka ghnta kuch nhi bigdega
 
 console.log('A(original array) => ', myArr); //original array
 

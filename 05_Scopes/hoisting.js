@@ -29,6 +29,7 @@ function addone(num) {
 //variable stored function
 
 // addtwo(7);//error dega
+
 const addtwo = function (num) {
   console.log(num + 2);
 };

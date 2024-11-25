@@ -1,3 +1,5 @@
+
+
 function loginUserMessage(username) {
   if (username === undefined) {
     return 'User logged in';

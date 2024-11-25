@@ -18,4 +18,10 @@ for (const [key,val] of mp) {
     console.log(`${key} for:`,val);
 }
 console.log("\n")
-// Note: forof loop cannot be used for object irl, forin loop use krlo simple :)
+// Note: forof loop cannot be used for object, forin loop use krlo simple :)
+
+
+// for - arr,obj,map
+// foreach - arr,map
+// forin - arr,obj
+// forof - arr,map

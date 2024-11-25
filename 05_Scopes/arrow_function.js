@@ -24,15 +24,15 @@ user.welcomemsg();
 
 // interviewer : why the global console.log(this) gives blank value in nodejs but windows object in browser console?
 console.log(this);
-// bcoz phle ke zamane me saari js browser ke console se seekhi jati this to window compatible chije thi but ab us js engine ko nikal
-// ke software compatible bnaya gya jisme windows object ki zarurat nhi hai, to this khali hi rhega na
+// bcoz phle ke zamane me saari js, browser ke console se seekhi jati thi to window compatible chije thi but ab us js engine ko nikal
+// ke software compatible bnaya gya jisme windows object ki zarurat nhi hai, to "this" khali hi rhega na
 
 
 // II: FUNCTION DECLARATION USING FUNCTION ONLY hehe :)
 
 function hello(){
     const username = "Sachin"
-    console.log("hello world");
+    console.log("\nhello world");
     console.log(this.username)//will print undefined kyuki "this" keyword ki sirf object ke andar chalti hai baaki jagah bhigibilli ban jata h same goes with "variable stored function"
 }
 hello()
@@ -41,7 +41,9 @@ hello()
 // III: FUNCTION DECLARATION USING VARIABLE STORED FUNCTION
 
 const hellog = function(){
-    console.log("this is variable stored function")
+  let username = "Helloayush"
+    console.log("\nthis is variable stored function")
+    console.log(this.username)
 }
 
 hellog()
@@ -52,7 +54,7 @@ hellog()
 
 const arrowfunc = ()=>{
     username = "Hellow moto"
-    console.log("This is arrow function ")
+    console.log("\nThis is arrow function ")
     console.log(this.username)// undefined
     console.log(this)// {} empty object tht's why we don't use this keyword in arrow function
 }

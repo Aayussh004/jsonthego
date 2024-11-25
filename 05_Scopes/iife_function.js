@@ -1,11 +1,11 @@
-// IIFE : Imediately Invoked Function Expression (2 paranthesis lagao aur fursat)
+// IIFE : Imediately Invoked Function Expression (2 paranthesis lagao aur fursat pao)
 
 
 // syntax:  ()() => (this is for function definition) (this is for calling that function)
 
 //interviewer : Why we use IIFE function?
 // Ans1: to imediately invoke any function. (Rejected)
-// Ans2: to reduce the global polution that global variable may produce so to make local scope pollution free we use iife. (Accepted :))
+// Ans2: to reduce the global pollution that global variable may produce so to make local scope pollution free we use iife. (Accepted :))
 
 // normal function 
 (function chai(){//function calling

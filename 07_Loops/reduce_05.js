@@ -15,7 +15,7 @@ console.log(mytotal);
 
 
 //or the above code can be written using arrow function also bit confusing :|
-let yourtotal = arr.reduce((acc,curr)=> acc+curr,intial_val);
+let yourtotal = arr.reduce((acc,curr)=> (acc+curr),intial_val);
 console.log(yourtotal);
 
 
@@ -43,3 +43,10 @@ const shopping_cart = [
 
 const total_price = shopping_cart.reduce((acc,curr)=>acc+curr.price,0);
 console.log(total_price);
+
+//ya phir forEach se bhi kr skte h kyuki array of object h
+let sum=0;
+shopping_cart.forEach((it)=>{
+  sum+=it.price;
+})
+console.log(sum)

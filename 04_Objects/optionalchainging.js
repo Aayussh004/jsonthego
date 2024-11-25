@@ -15,6 +15,8 @@ console.log(user.name);//Ayush
 console.log(user.father.name);//Sarvind
 console.log(user.father.father.name);//Kishori Lal
 
+
+
 //Destructuring
 //syntax to directly use object keys without using dot operator - object destructure
 const obj = {

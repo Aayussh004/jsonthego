@@ -13,11 +13,14 @@ console.log("using concat func: ",allHeros);
 //ya phir aise bhi add kr skte ho, Spread: it will spread all elements
 const all_new_heros = [...marvel_heros, ...dc_heros]//but hum spread use krenge most of the time
 console.log("using spread operator: ",all_new_heros);
+console.log("marvel_heros after spread:", marvel_heros);
 
 //now ab agr array ke andar array phle se present ho to kaise kroge print: simple use spread by using flat func
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
 const real_another_array = another_array.flat(Infinity)//infinity will do spread untill all elements gets seperated
+const newarr = [ ...another_array]//cannot do this for spreading array 
+console.log("newarr using spread operator:",newarr);
 console.log(real_another_array);
 
 
